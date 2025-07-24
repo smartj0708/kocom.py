@@ -537,7 +537,7 @@ def packet_processor(p):
         rs485_floor = int(config.get('Elevator','rs485_floor', fallback=0))
         if rs485_floor != 0 :
           if p['value'] == '030000000000000' :
-         state = {'state': 'off'}   
+              state = {'state': 'off'}   
          #state = {'floor': floor}
            # if rs485_floor == floor:
             #  state['state'] = 'off'
